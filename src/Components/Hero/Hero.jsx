@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className={styles.hero}>
+      <div id="home" className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>Olá, meu nome é {desktopLg ? null : <br />}Carlos Castro.</h1>
           <p>

@@ -8,6 +8,7 @@
   color: var(--text);
   background: var(--bg1);
   border-bottom: 2px solid var(--main);
+  z-index: 99;
 }
 
 /* ME */

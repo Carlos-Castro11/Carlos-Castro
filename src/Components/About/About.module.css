@@ -1,4 +1,30 @@
 .about .subtitle {
   text-align: center;
   color: var(--text);
+  font-size: 0.9rem;
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.aboutContent h3 {
+  color: var(--main);
+  font-family: var(--type-first);
+}
+
+.aboutContent p {
+  font-size: 0.95rem;
+}
+
+@media (min-width: 600px) {
+  .about .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .aboutContent p {
+    font-size: 1.25rem;
+  }
 }

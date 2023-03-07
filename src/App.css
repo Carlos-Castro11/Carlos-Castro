@@ -8,8 +8,9 @@
 }
 
 body {
-  --type-second: "Cinzel Decorative", Arial, Helvetica, sans-serif;
   --type-first: "Roboto", Arial, Helvetica, sans-serif;
+  --type-second: "Cinzel Decorative", Arial, Helvetica, sans-serif;
+  --type-third: Arial, Helvetica, sans-serif;
   margin: 0px;
   padding: 0px;
   font-family: var(--type-first);

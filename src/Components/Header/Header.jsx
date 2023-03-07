@@ -45,25 +45,25 @@ const Header = () => {
           }`}
         >
           <li className={styles.navItem}>
-            <a href="#home">
+            <a onClick={() => setMobileActive(false)} href="#home">
               {desktop ? null : <Home />}
               Início
             </a>
           </li>
           <li className={styles.navItem}>
-            <a href="#about">
+            <a onClick={() => setMobileActive(false)} href="#about">
               {desktop ? null : <About />}
               Sobre
             </a>
           </li>
           <li className={styles.navItem}>
-            <a href="#portfolio">
+            <a onClick={() => setMobileActive(false)} href="#portfolio">
               {desktop ? null : <Code />}
               Projetos
             </a>
           </li>
           <li className={styles.navItem}>
-            <a href="#contact">
+            <a onClick={() => setMobileActive(false)} href="#contact">
               {desktop ? null : <Contact />}
               Contato
             </a>
