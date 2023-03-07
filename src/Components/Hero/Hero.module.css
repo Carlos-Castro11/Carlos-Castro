@@ -1,6 +1,6 @@
 .hero {
   color: var(--text);
-  height: 70vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   place-content: center;
