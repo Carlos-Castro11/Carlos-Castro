@@ -66,6 +66,8 @@
   border-radius: 0.3rem;
   padding: 1rem 1rem 1rem 0.5rem;
   gap: 1.5rem;
+  background: var(--bg1);
+  z-index: 999999;
 }
 
 .navListActive {

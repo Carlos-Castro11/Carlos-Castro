@@ -1,3 +1,31 @@
 .hero {
-  color: var(--main);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  margin: 1rem;
+}
+
+.heroContent {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 600px) {
+  .heroContent h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
 }
