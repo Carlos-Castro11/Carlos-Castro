@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr;
   height: 5rem;
   color: var(--text);
-  background: transparent;
+  background: var(--bg1);
   border-bottom: 2px solid var(--main);
 }
 
@@ -58,7 +58,7 @@
   font-size: 0.85rem;
   transform: translateX(30px);
   transition: all 0.25s ease-in-out;
-  top: 15%;
+  top: 12%;
   right: 1%;
   display: flex;
   flex-direction: column;

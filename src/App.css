@@ -48,3 +48,32 @@ img {
   padding: 0 1rem;
   margin: 0 auto;
 }
+
+.title {
+  font-family: var(--type-second);
+  font-size: 2rem;
+  color: var(--main);
+  margin: 0 auto;
+  max-width: 190px;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background: linear-gradient(45deg, transparent, var(--main));
+  position: absolute;
+  left: 100%;
+  top: 50%;
+}
+
+.title::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background: linear-gradient(45deg, var(--main), transparent);
+  position: absolute;
+  right: 100%;
+  top: 50%;
+}

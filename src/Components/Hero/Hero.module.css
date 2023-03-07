@@ -1,31 +1,48 @@
 .hero {
   color: var(--text);
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   place-content: center;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .heroContent {
-  margin-bottom: 2rem;
   text-align: center;
 }
 
-.heroContent h1 {
+.heroContent span {
+  font-weight: bold;
+  font-family: var(--type-second);
+}
+
+.heroContent h1,
+span {
   font-size: 3rem;
 }
 
 p {
   font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.heroContent h2 {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 600px) {
-  .heroContent h1 {
+  .heroContent h1,
+  span {
     font-size: 3.5rem;
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroContent {
+    margin-bottom: 3rem;
   }
 }
