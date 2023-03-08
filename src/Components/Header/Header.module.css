@@ -29,7 +29,7 @@
   position: relative;
 }
 
-.profile h4::after {
+/* .profile h4::after {
   content: "";
   position: absolute;
   background: var(--main);
@@ -38,7 +38,7 @@
   bottom: -2px;
   left: 0;
   background: linear-gradient(45deg, var(--main), transparent);
-}
+} */
 
 /* NAV LIST  */
 .nav {

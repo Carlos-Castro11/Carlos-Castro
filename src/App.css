@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,9 +9,9 @@
 }
 
 body {
-  --type-first: "Roboto", Arial, Helvetica, sans-serif;
-  --type-second: "Cinzel Decorative", Arial, Helvetica, sans-serif;
-  --type-third: Arial, Helvetica, sans-serif;
+  --type-first: "Poppins", Arial, Helvetica, sans-serif;
+  --type-second: "Roboto", Arial, Helvetica, sans-serif;
+  --type-third: "Cinzel Decorative", Arial, Helvetica, sans-serif;
   margin: 0px;
   padding: 0px;
   font-family: var(--type-first);
@@ -52,7 +53,7 @@ img {
 }
 
 .title {
-  font-family: var(--type-second);
+  font-family: var(--type-third);
   font-size: 2rem;
   color: var(--main);
   margin: 0 auto;

@@ -1,7 +1,7 @@
 .button {
   padding: 0.5rem 1rem;
   font-size: 1.7rem;
-  font-family: var(--type-second);
+  font-family: var(--type-first);
   font-weight: bold;
   background: linear-gradient(to bottom, var(--main), rgb(200, 0, 0));
   color: white;
@@ -11,6 +11,8 @@
   cursor: pointer;
   transition: 0.2s ease-in-out;
   max-width: max-content;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .button:focus,

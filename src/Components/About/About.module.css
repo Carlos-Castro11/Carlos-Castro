@@ -2,6 +2,7 @@
   text-align: center;
   color: var(--text);
   font-size: 0.9rem;
+  margin-bottom: 3rem;
 }
 
 .aboutContent {
@@ -13,6 +14,7 @@
 .aboutContent h3 {
   color: var(--main);
   font-family: var(--type-first);
+  text-align: center;
 }
 
 .aboutContent p {
@@ -21,10 +23,15 @@
 
 @media (min-width: 600px) {
   .about .subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .aboutContent {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
   }
 
   .aboutContent p {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }

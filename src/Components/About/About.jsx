@@ -25,6 +25,9 @@ const About = () => {
           <p>Js</p>
           <p>React</p>
           <p>Node</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>SQLBasic</p>
         </div>
       </div>
     </section>
