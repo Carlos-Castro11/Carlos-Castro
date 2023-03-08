@@ -29,6 +29,10 @@
   position: relative;
 }
 
+.profile svg {
+  fill: var(--main);
+}
+
 /* .profile h4::after {
   content: "";
   position: absolute;
@@ -67,12 +71,14 @@
   gap: 1.5rem;
   background: var(--bg1);
   z-index: 999999;
+  visibility: hidden;
 }
 
 .navListActive {
   opacity: 1;
   pointer-events: initial;
   transform: translateX(0px);
+  visibility: visible;
 }
 
 .navListDesktop {

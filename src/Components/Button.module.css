@@ -3,7 +3,7 @@
   font-size: 1.7rem;
   font-family: var(--type-first);
   font-weight: bold;
-  background: linear-gradient(to bottom, var(--main), rgb(200, 0, 0));
+  background: var(--main);
   color: white;
   border: 2px solid transparent;
   outline: none;

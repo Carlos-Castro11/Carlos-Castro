@@ -81,3 +81,16 @@ img {
   right: 100%;
   top: 50%;
 }
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: anime 0.5s forwards;
+}
+
+@keyframes anime {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}

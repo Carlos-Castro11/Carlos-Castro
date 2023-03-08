@@ -9,16 +9,28 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  color: var(--text);
+  position: relative;
+}
+
+.aboutContent::after {
+  position: absolute;
+  content: "";
+  background: var(--main);
+  width: 100%;
+  height: 2px;
+  top: 35%;
 }
 
 .aboutContent h3 {
   color: var(--main);
-  font-family: var(--type-first);
+  font-family: var(--type-second);
   text-align: center;
 }
 
 .aboutContent p {
   font-size: 0.95rem;
+  text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -28,7 +40,14 @@
 
   .aboutContent {
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 1rem;
+  }
+  .aboutContent::after {
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
   }
 
   .aboutContent p {

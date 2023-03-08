@@ -17,18 +17,18 @@ const Hero = () => {
 
   return (
     <>
-      <div id="home" className={styles.hero}>
+      <div id="home" className={`${styles.hero} animeLeft`}>
         <div className={styles.heroContent}>
-          <h1>Olá, meu nome é {desktopLg ? null : <br />}Carlos Castro.</h1>
+          <h1>Olá! eu sou {desktopLg ? null : <br />}Carlos Castro.</h1>
           <p>
             Uma pessoa apaixonada por desenvolvimento web,{" "}
             {desktopLg ? <br /> : null}especificamente com{" "}
             <strong>JavaScript</strong>.
           </p>
           <h2>
-            <span style={{ color: "rgb(139, 0, 0)" }}>
+            <span style={{ color: "var(--main)" }}>
               {text}
-              <Cursor cursorColor="rgb(139, 0, 0)" />
+              <Cursor cursorColor="var(--main)" />
             </span>
           </h2>
           <Button>Projetos</Button>
