@@ -33,6 +33,11 @@
   text-align: center;
 }
 
+.skills,
+.nowMe {
+  padding: 0rem;
+}
+
 .tech {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -45,6 +50,7 @@
   color: var(--bg1);
   padding: 0.2rem 0.5rem;
   border-radius: 0.4rem;
+  font-weight: bold;
 }
 
 @media (min-width: 600px) {
@@ -70,5 +76,10 @@
 
   .tech p {
     font-size: 0.9rem;
+  }
+
+  .skills,
+  .nowMe {
+    padding: 2rem;
   }
 }
