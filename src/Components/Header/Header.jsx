@@ -64,7 +64,7 @@ const Header = () => {
             </a>
           </li>
           <li className={styles.navItem}>
-            <a onClick={() => setMobileActive(false)} href="#portfolio">
+            <a onClick={() => setMobileActive(false)} href="#projects">
               {desktop ? null : <Code />}
               Projetos
             </a>

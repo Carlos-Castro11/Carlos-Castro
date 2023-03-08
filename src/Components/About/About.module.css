@@ -19,7 +19,7 @@
   background: var(--main);
   width: 100%;
   height: 2px;
-  top: 35%;
+  top: 42%;
 }
 
 .aboutContent h3 {
@@ -33,6 +33,20 @@
   text-align: center;
 }
 
+.tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0rem 0.5rem;
+  place-content: center;
+}
+
+.tech p {
+  background: var(--main);
+  color: var(--bg1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
 @media (min-width: 600px) {
   .about .subtitle {
     font-size: 1rem;
@@ -44,13 +58,17 @@
   }
   .aboutContent::after {
     height: 100%;
-    width: 2px;
-    left: 50%;
+    width: 1px;
+    left: 49.5%;
     top: 0;
-    transform: translateX(-50%);
+    background: linear-gradient(180deg, transparent, var(--main), transparent);
   }
 
   .aboutContent p {
     font-size: 1rem;
+  }
+
+  .tech p {
+    font-size: 0.9rem;
   }
 }

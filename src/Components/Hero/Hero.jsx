@@ -18,6 +18,7 @@ const Hero = () => {
   return (
     <>
       <div id="home" className={`${styles.hero} animeLeft`}>
+        <div class="blob"></div>
         <div className={styles.heroContent}>
           <h1>Olá! eu sou {desktopLg ? null : <br />}Carlos Castro.</h1>
           <p>

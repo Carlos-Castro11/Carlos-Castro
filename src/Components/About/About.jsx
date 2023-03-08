@@ -22,12 +22,15 @@ const About = () => {
         </div>
         <div className={styles.skills}>
           <h3>Habilidades</h3>
-          <p>Js</p>
-          <p>React</p>
-          <p>Node</p>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>SQLBasic</p>
+          <div className={styles.tech}>
+            <p>JavaScript</p>
+            <p>React.js</p>
+            <p>Node.js</p>
+            <p>CSS</p>
+            <p>SQLBasic</p>
+            <p>Rest API</p>
+            <p>HTML</p>
+          </div>
         </div>
       </div>
     </section>
