@@ -2,6 +2,7 @@
   height: 5rem;
   background: var(--main);
   color: var(--bg1);
+  margin-top: 1.5rem;
 }
 
 .footerDark {

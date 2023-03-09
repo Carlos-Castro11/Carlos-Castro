@@ -20,10 +20,21 @@ const Header = () => {
         setMobileActive(false);
       }
     }
+
+    function handleScroll() {
+      if (mobileActive) {
+        setMobileActive(false);
+      }
+    }
+
     setDesktop();
     window.addEventListener("resize", setDesktop);
-    return () => window.removeEventListener("resize", setDesktop);
-  }, [desktop]);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("resize", setDesktop);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [desktop, mobileActive]);
 
   return (
     <header className={`${styles.header} ${dark && styles.headerDark}`}>
