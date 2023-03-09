@@ -1,5 +1,8 @@
-.aboutDark {
+.about {
   min-width: 100%;
+}
+
+.aboutDark {
   background: var(--bg1Dark);
 }
 
@@ -132,16 +135,7 @@
     font-size: 1rem;
   }
 
-  .aboutDark .subtitle {
-    font-size: 1rem;
-  }
-
   .aboutContent {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .aboutDark .aboutContent {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
@@ -167,15 +161,7 @@
     font-size: 1rem;
   }
 
-  .aboutDark .aboutContent p {
-    font-size: 1rem;
-  }
-
   .tech p {
-    font-size: 0.9rem;
-  }
-
-  .aboutDark .tech p {
     font-size: 0.9rem;
   }
 

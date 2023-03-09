@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className={`${dark ? styles.aboutDark : styles.about} container`}
+      className={`${styles.about} ${dark && styles.aboutDark} container`}
     >
       <h1 className={styles.title}>Sobre mim</h1>
       <p className={styles.subtitle}>

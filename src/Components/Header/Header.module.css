@@ -158,6 +158,7 @@
 
 .iconNav {
   fill: var(--main);
+  margin-bottom: 0.1rem;
 }
 
 .navListDark .iconNav {

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path fill="none" stroke="rgb(139, 0, 0)" stroke-width="1.8" d="M5,12 C3.343,12 2,10.657 2,9 C2,7.343 3.343,6 5,6 C6.657,6 8,7.343 8,9 C8,10.657 6.657,12 5,12 Z M9,18 L9,16 C9,13.7504 7.2128,12 4.964,12 L5.0184,12 C2.7688,12 1,13.7504 1,16 L1,18 M12,7 L24,7 M12,17 L22,17 M12,12 L19,12"/>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#000000" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 490 490" xml:space="preserve">
+<g>
+	<path d="M245,490c135.31,0,245-109.69,245-245S380.31,0,245,0C109.69,0,0,109.69,0,245S109.69,490,245,490z M245,30.625
+		c118.207,0,214.375,96.168,214.375,214.375S363.207,459.375,245,459.375c-118.207,0-214.375-96.168-214.375-214.375
+		S126.793,30.625,245,30.625z"/>
+	<ellipse cx="245" cy="172.087" rx="60.359" ry="59.157"/>
+	<path d="M245,244.28c-57.571,0-104.242,45.741-104.242,102.166h208.484C349.242,290.021,302.571,244.28,245,244.28z"/>
+</g>
 </svg>

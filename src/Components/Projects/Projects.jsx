@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className={dark ? styles.projectsDark : styles.projects}
+      className={`${styles.projects} ${dark && styles.projectsDark}`}
     >
       <h1 className={styles.title}>Projetos</h1>
     </section>
