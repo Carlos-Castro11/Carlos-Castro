@@ -1,0 +1,74 @@
+.card {
+  background: var(--bg2);
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 3px black;
+  max-width: 400px;
+  border: 2px solid var(--main);
+}
+
+.cardDark {
+  background: var(--bg2Dark);
+  border-color: var(--mainDark);
+}
+
+.cardTitle.xT svg path {
+  fill: var(--main);
+}
+
+.cardDark .cardTitle.xT svg path {
+  fill: var(--mainDark);
+}
+
+.cardTitle.xF svg {
+  stroke: var(--main);
+  stroke-width: 1.2px;
+}
+
+.cardDark .cardTitle.xF svg {
+  stroke: var(--mainDark);
+}
+
+.cardTitle {
+  display: flex;
+  place-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+.cardSubtitle {
+  font-size: 0.9rem;
+}
+
+.cardSpan {
+  color: var(--main);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cardDark .cardSpan {
+  color: var(--mainDark);
+}
+
+.lang,
+.tech {
+  display: flex;
+  place-self: center;
+  gap: 1rem;
+  background: var(--bg1);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  margin-top: -10px;
+}
+
+.lang img,
+.tech img {
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+.lang {
+  margin-bottom: 1rem;
+}

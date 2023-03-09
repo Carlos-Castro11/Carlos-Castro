@@ -97,7 +97,7 @@ const Header = () => {
                 </g>
               </g>
             </svg>
-            {desktop ? null : <span>Theme</span>}
+            {desktop ? null : <span>Tema</span>}
           </li>
         </ul>
       </div>

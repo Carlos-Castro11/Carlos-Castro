@@ -51,8 +51,8 @@ img {
 
 .container {
   max-width: 70rem;
-  padding: 0 1rem;
   margin: 0 auto;
+  padding: 0rem 1rem;
 }
 
 .animeLeft {

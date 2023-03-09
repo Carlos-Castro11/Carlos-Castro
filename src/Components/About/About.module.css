@@ -1,5 +1,7 @@
 .about {
   min-width: 100%;
+  display: grid;
+  place-content: center;
 }
 
 .aboutDark {
@@ -44,6 +46,7 @@
   color: var(--text);
   font-size: 0.9rem;
   margin-bottom: 3rem;
+  max-width: 400px;
 }
 
 .aboutDark .subtitle {
@@ -66,110 +69,58 @@
 }
 
 .aboutContent {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: var(--text);
-  position: relative;
+  gap: 3rem;
 }
 
 .aboutDark .aboutContent {
   color: var(--textDark);
 }
 
-.aboutContent::after {
-  position: absolute;
-  content: "";
-  background: var(--main);
-  width: 100%;
-  height: 2px;
-  top: 42%;
-}
-
 .aboutDark .aboutContent::after {
   background: var(--mainDark);
 }
 
-.aboutContent h3 {
+.linkedin {
+  text-decoration: underline;
   color: var(--main);
-  font-family: var(--type-second);
-  text-align: center;
-}
-
-.aboutDark h3 {
-  color: var(--mainDark);
-}
-
-.aboutContent p {
-  font-size: 0.95rem;
-  text-align: center;
-}
-
-.skills,
-.nowMe {
-  padding: 0rem;
-}
-
-.tech {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0rem 0.5rem;
-  place-content: center;
-}
-
-.tech p {
-  background: var(--main);
-  color: var(--bg1);
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.4rem;
   font-weight: bold;
 }
 
-.aboutDark .tech p {
-  background: var(--mainDark);
-  color: var(--bg1Dark);
+.aboutDark .linkedin {
+  color: var(--mainDark);
 }
 
 @media (min-width: 600px) {
   .about .subtitle {
     font-size: 1rem;
-  }
-
-  .aboutContent {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .aboutContent::after {
-    height: 100%;
-    width: 1px;
-    left: 49.5%;
-    top: 0;
-    background: linear-gradient(180deg, transparent, var(--main), transparent);
-  }
-
-  .aboutDark .aboutContent::after {
-    background: linear-gradient(
-      180deg,
-      transparent,
-      var(--mainDark),
-      transparent
-    );
+    max-width: 800px;
   }
 
   .aboutContent p {
     font-size: 1rem;
   }
 
-  .tech p {
-    font-size: 0.9rem;
+  .aboutContent {
+    flex-direction: initial;
   }
-
-  .nowMe {
-    padding: 1rem;
+  .about {
+    padding: 0rem 3rem;
   }
+}
 
-  .skills {
-    padding-left: 2rem;
+@media (min-width: 900px) {
+  .about {
+    padding: 0rem 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .about {
+    padding: 0rem 6rem;
   }
 }
