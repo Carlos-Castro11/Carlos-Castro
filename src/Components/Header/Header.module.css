@@ -11,6 +11,12 @@
   z-index: 99;
 }
 
+.headerDark {
+  color: var(--textDark);
+  background: var(--bg1Dark);
+  border-color: var(--mainDark);
+}
+
 /* ME */
 .profile {
   display: flex;
@@ -29,20 +35,17 @@
   position: relative;
 }
 
+.profileDark h4 {
+  color: var(--textDark);
+}
+
 .profile svg {
   fill: var(--main);
 }
 
-/* .profile h4::after {
-  content: "";
-  position: absolute;
-  background: var(--main);
-  height: 2px;
-  width: 100%;
-  bottom: -2px;
-  left: 0;
-  background: linear-gradient(45deg, var(--main), transparent);
-} */
+.profileDark svg {
+  fill: var(--mainDark);
+}
 
 /* NAV LIST  */
 .nav {
@@ -74,6 +77,11 @@
   visibility: hidden;
 }
 
+.navListDark {
+  background: var(--bg1Dark);
+  border-color: var(--mainDark);
+}
+
 .navListActive {
   opacity: 1;
   pointer-events: initial;
@@ -88,6 +96,7 @@
   display: flex;
   gap: 1.5rem;
   margin-right: 2rem;
+  align-items: center;
 }
 
 /* NAV ITEM */
@@ -107,6 +116,10 @@
   transform: translateX(-50%);
 }
 
+.navListDark.navListDesktop .navItem a::after {
+  background: var(--mainDark);
+}
+
 .navListDesktop .navItem a:hover::after {
   width: 100%;
 }
@@ -119,6 +132,36 @@
 
 .navList .navItem {
   border-bottom: 1px solid var(--main);
+}
+
+.navListDark .navItem {
+  border-color: var(--mainDark);
+}
+
+.btnTheme {
+  padding: 0rem;
+  margin: 0rem;
+  cursor: pointer;
+  text-align: center;
+  place-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.btnTheme svg {
+  fill: var(--main);
+}
+
+.navListDark .btnTheme svg {
+  fill: var(--mainDark);
+}
+
+.iconNav {
+  fill: var(--main);
+}
+
+.navListDark .iconNav {
+  fill: var(--mainDark);
 }
 
 /* BUTTON MOBILE  */
@@ -136,6 +179,11 @@
   place-content: center;
   position: absolute;
   right: 2.5rem;
+}
+
+.navDark .buttonMobile {
+  border-color: var(--mainDark);
+  color: var(--mainDark);
 }
 
 .buttonMobile::after {

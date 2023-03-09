@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import useMedia from "../../Hooks/useMedia";
+import { ThemeContext } from "../../ThemeContext";
 
 // TYPE
 import { Cursor, useTypewriter } from "react-simple-typewriter";
@@ -8,6 +9,7 @@ import Button from "../Button";
 
 const Hero = () => {
   const desktopLg = useMedia("(min-width: 850px)");
+  const { dark } = React.useContext(ThemeContext);
 
   const [text] = useTypewriter({
     words: ["<JavaScript />", "<React />", "<Node />"],
@@ -17,8 +19,10 @@ const Hero = () => {
 
   return (
     <>
-      <div id="home" className={`${styles.hero} animeLeft`}>
-        <div class="blob"></div>
+      <div
+        id="home"
+        className={`${dark ? styles.heroDark : styles.hero} animeLeft`}
+      >
         <div className={styles.heroContent}>
           <h1>Olá! eu sou {desktopLg ? null : <br />}Carlos Castro.</h1>
           <p>
@@ -27,9 +31,9 @@ const Hero = () => {
             <strong>JavaScript</strong>.
           </p>
           <h2>
-            <span style={{ color: "var(--main)" }}>
+            <span className={styles.type}>
               {text}
-              <Cursor cursorColor="var(--main)" />
+              <Cursor />
             </span>
           </h2>
           <Button>Projetos</Button>

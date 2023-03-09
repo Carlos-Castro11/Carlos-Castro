@@ -7,6 +7,15 @@
   background: linear-gradient(to bottom, var(--bg2), var(--bg1));
 }
 
+.heroDark {
+  color: var(--textDark);
+  height: 76vh;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  background: linear-gradient(to bottom, var(--bg2Dark), var(--bg1Dark));
+}
+
 .heroContent {
   text-align: center;
   display: flex;
@@ -28,8 +37,13 @@
   text-transform: uppercase;
 }
 
-.heroContent span {
+.heroContent .type {
   font-size: 2.5rem;
+  color: var(--main);
+}
+
+.heroDark .type {
+  color: var(--mainDark);
 }
 
 p {

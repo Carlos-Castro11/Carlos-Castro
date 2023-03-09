@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./About.module.css";
+import { ThemeContext } from "../../ThemeContext";
 
 const About = () => {
+  const { dark } = React.useContext(ThemeContext);
+
   return (
-    <section id="about" className={`${styles.about} container`}>
-      <h1 className="title">Sobre mim</h1>
+    <section
+      id="about"
+      className={`${dark ? styles.aboutDark : styles.about} container`}
+    >
+      <h1 className={styles.title}>Sobre mim</h1>
       <p className={styles.subtitle}>
         Aqui você encontrará mais informações sobre mim, o que faço e minhas
         habilidades atuais principalmente em termos de programação e
@@ -28,8 +34,9 @@ const About = () => {
             <p>Node.js</p>
             <p>CSS</p>
             <p>SQLBasic</p>
-            <p>Rest API</p>
+            <p>API</p>
             <p>HTML</p>
+            <p>GitHub</p>
           </div>
         </div>
       </div>

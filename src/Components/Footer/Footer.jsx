@@ -1,9 +1,12 @@
 import React from "react";
+import styles from "./Footer.module.css";
+import { ThemeContext } from "../../ThemeContext";
 
 const Footer = () => {
+  const { dark } = React.useContext(ThemeContext);
   return (
-    <footer style={{ background: "var(--main)", height: "5rem" }}>
-      <h1 style={{ color: "white" }}>FOOTER</h1>
+    <footer className={`${styles.footer} ${dark && styles.footerDark}`}>
+      <h1>FOOTER</h1>
     </footer>
   );
 };

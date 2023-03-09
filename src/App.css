@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
@@ -54,39 +53,6 @@ img {
   max-width: 70rem;
   padding: 0 1rem;
   margin: 0 auto;
-}
-
-.title {
-  font-family: var(--type-first);
-  white-space: nowrap;
-  font-size: 2rem;
-  color: var(--main);
-  margin: 0 auto;
-  max-width: 190px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.title::before {
-  content: "";
-  height: 2px;
-  width: 50%;
-  background: linear-gradient(45deg, transparent, var(--main));
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.title::after {
-  content: "";
-  height: 2px;
-  width: 50%;
-  background: linear-gradient(45deg, var(--main), transparent);
-  position: absolute;
-  right: 100%;
-  top: 50%;
 }
 
 .animeLeft {

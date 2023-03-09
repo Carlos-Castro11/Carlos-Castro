@@ -1,0 +1,10 @@
+.footer {
+  height: 5rem;
+  background: var(--main);
+  color: var(--bg1);
+}
+
+.footerDark {
+  background: var(--mainDark);
+  color: var(--bg1Dark);
+}
