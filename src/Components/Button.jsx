@@ -5,7 +5,7 @@ import { ThemeContext } from "../ThemeContext";
 const Button = ({ children }) => {
   const { dark } = React.useContext(ThemeContext);
   return (
-    <button className={`${dark ? styles.buttonDark : styles.button}`}>
+    <button className={`${styles.button} ${dark && styles.buttonDark}`}>
       {children}
     </button>
   );

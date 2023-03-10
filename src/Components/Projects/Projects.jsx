@@ -19,17 +19,17 @@ const Projects = () => {
       <h1 className={styles.title}>Projetos</h1>
       <div className={`${styles.projectsContent} container`}>
         <Site
-          desc="lorem lorem lorem lorem rlorem lorem lorem"
+          desc="A melhor plataforma de streaming atualmente."
           logo={muflix}
           link="https://muflix-delta.vercel.app/"
         />
         <Site
-          desc="lorem lorem lorem lorem rlorem lorem lorem"
+          desc="Dogs - Rede social para cachorros."
           logo={dogs}
           link="https://dogs-lemon.vercel.app/"
         />
         <Site
-          desc="lorem lorem lorem lorem rlorem lorem lorem"
+          desc="Garanta uma construção, com a melhor qualidade!"
           logo={mf}
           link="https://marques-finelli.vercel.app/"
         />

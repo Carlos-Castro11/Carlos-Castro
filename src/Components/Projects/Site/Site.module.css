@@ -4,6 +4,11 @@
   align-items: center;
   text-align: center;
   gap: 1rem;
+  color: var(--text);
+}
+
+.site.siteDark {
+  color: var(--textDark);
 }
 
 .siteTitle {
@@ -19,6 +24,14 @@
   background: var(--bg2);
   padding: 1.5rem;
   border-radius: 0.4rem;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  place-content: center;
+}
+
+.siteDark .siteLogo {
+  background: var(--textDark);
 }
 
 .view {
@@ -26,4 +39,32 @@
   color: var(--bg1);
   padding: 0.5rem;
   border-radius: 0.4rem;
+  transition: 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  font-family: var(--type-second);
+}
+
+.view:focus,
+.view:hover {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px var(--main2), 0px 0px 0px 4px var(--main);
+}
+
+.siteDark .view {
+  background: var(--mainDark);
+  color: var(--bg1Dark);
+  font-weight: bold;
+}
+.siteDark .view:focus,
+.siteDark .view:hover {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px var(--mainDark2), 0px 0px 0px 4px var(--mainDark);
+}
+
+@media (min-width: 600px) {
+  .siteLogo {
+    width: 250px;
+  }
 }

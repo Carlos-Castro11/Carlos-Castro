@@ -5,7 +5,6 @@
   font-weight: bold;
   background: var(--main);
   color: var(--bg1);
-  border: 2px solid transparent;
   outline: none;
   border-radius: 0.3rem;
   cursor: pointer;
@@ -13,37 +12,24 @@
   max-width: max-content;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border: none;
 }
 
 .button:focus,
 .button:hover {
-  border-color: rgb(255, 0, 0);
-  box-shadow: 0px 0px 3px var(--main);
+  box-shadow: 0px 0px 0px 3px var(--main2), 0px 0px 0px 4px var(--main);
   color: var(--main);
   background: var(--bg1);
 }
 
-.buttonDark {
-  padding: 0.5rem 1rem;
-  font-size: 1.7rem;
-  font-family: var(--type-first);
-  font-weight: bold;
+.button.buttonDark {
   background: var(--mainDark);
   color: var(--bg1Dark);
-  border: 2px solid transparent;
-  outline: none;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  max-width: max-content;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-.buttonDark:focus,
-.buttonDark:hover {
-  border-color: rgb(255, 255, 0);
-  box-shadow: 0px 0px 3px var(--mainDark);
+.button.buttonDark:focus,
+.button.buttonDark:hover {
+  box-shadow: 0px 0px 0px 3px var(--mainDark2), 0px 0px 0px 4px var(--mainDark);
   color: var(--mainDark);
   background: var(--bg1Dark);
 }

@@ -52,6 +52,53 @@ p {
   margin-bottom: 1rem;
 }
 
+.media {
+  margin: 1.5rem auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.linkedin,
+.github {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  letter-spacing: 1.1px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: 140px;
+  place-content: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.linkedin {
+  background: #fff;
+  border: 1px solid lightskyblue;
+}
+
+.heroDark .linkedin {
+  color: var(--bg1Dark);
+}
+
+.github {
+  background: #000;
+  color: var(--bg1);
+  position: relative;
+}
+
+@keyframes anime {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 @media (min-width: 600px) {
   .heroContent h1,
   .type {

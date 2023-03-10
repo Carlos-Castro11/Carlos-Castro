@@ -17,10 +17,12 @@ body {
   --bg1: #e3e3e3;
   --bg2: #c0bdbddd;
   --main: rgb(139, 0, 0);
+  --main2: rgb(255, 60, 30);
   --text: rgb(27, 27, 27);
   --bg1Dark: rgb(27, 27, 27);
   --bg2Dark: rgb(40, 40, 40);
   --mainDark: #fb1;
+  --mainDark2: #fea;
   --textDark: #fff;
   margin-top: 5rem;
   background: var(--bg1);

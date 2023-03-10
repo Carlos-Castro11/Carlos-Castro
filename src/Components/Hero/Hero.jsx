@@ -6,6 +6,8 @@ import { ThemeContext } from "../../ThemeContext";
 // TYPE
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Button from "../Button";
+import github from "../../assets/icons/github.svg";
+import linkedin from "../../assets/icons/linkedin.svg";
 
 const Hero = () => {
   const desktopLg = useMedia("(min-width: 850px)");
@@ -36,7 +38,29 @@ const Hero = () => {
               <Cursor />
             </span>
           </h2>
-          <Button>Projetos</Button>
+          <a href="#projects">
+            <Button>Projetos</Button>
+          </a>
+          <div className={styles.media}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://linkedin.com/in/carloshcsousa"
+              className={styles.linkedin}
+            >
+              <img src={linkedin} alt="" />
+              Linkedin
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Carlos-Castro11"
+              className={styles.github}
+            >
+              <img src={github} alt="" />
+              github
+            </a>
+          </div>
         </div>
       </div>
     </>
