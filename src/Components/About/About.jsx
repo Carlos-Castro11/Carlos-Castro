@@ -10,13 +10,14 @@ import js from "../../assets/icons/js.svg";
 import react from "../../assets/icons/frontend.svg";
 import vue from "../../assets/icons/vue.svg";
 import sql from "../../assets/icons/sql.svg";
+import sqlIcon from "../../assets/icons/sqlIcon.svg";
 import node from "../../assets/icons/node.svg";
 import python from "../../assets/icons/python.svg";
 import django from "../../assets/icons/django.svg";
 
 const About = () => {
   const iconsCard = [js, css, html, react, vue];
-  const iconsCard2 = [js, sql, python, django, node];
+  const iconsCard2 = [js, sqlIcon, python, django, node, sql];
 
   const { dark } = React.useContext(ThemeContext);
 

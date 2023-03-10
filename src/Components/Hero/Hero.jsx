@@ -57,10 +57,8 @@ const Hero = () => {
               href="https://github.com/Carlos-Castro11"
               className={styles.github}
             >
-              <span>
-                <img src={github} alt="" />
-                github
-              </span>
+              <img src={github} alt="" />
+              github
             </a>
           </div>
         </div>

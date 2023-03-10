@@ -21,6 +21,7 @@ const Card = ({ title, subtitle, icons, img, x }) => {
       <div className={styles.tech}>
         <img src={icons[3]} alt="" />
         <img src={icons[4]} alt="" />
+        {icons[5] ? <img src={icons[5]} alt="" /> : null}
       </div>
     </div>
   );
