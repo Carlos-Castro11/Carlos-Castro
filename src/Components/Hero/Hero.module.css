@@ -58,8 +58,7 @@ p {
   gap: 1rem;
 }
 
-.linkedin,
-.github {
+.linkedin {
   padding: 0.5rem;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -84,21 +83,6 @@ p {
   color: var(--bg1Dark);
 }
 
-.github {
-  background: #000;
-  color: var(--bg1);
-  position: relative;
-}
-
-@keyframes anime {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-
 @media (min-width: 600px) {
   .heroContent h1,
   .type {
@@ -107,5 +91,79 @@ p {
 
   p {
     font-size: 1.5rem;
+  }
+}
+
+.github {
+  position: relative;
+  width: 140px;
+  background: #000;
+  text-transform: uppercase;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  border-radius: 0.4rem;
+}
+
+.github::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #f00,
+    #ff0,
+    #fb0094,
+    #00f,
+    #0f0,
+    #f00,
+    #ff0
+  );
+  background-size: 400%;
+  animation: animate 20s linear infinite;
+  border-radius: 0.4rem;
+}
+
+.github span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  place-content: center;
+  gap: 1rem;
+  background: #0c0c0c;
+  color: var(--bg1);
+  transition: 0.5s;
+  z-index: 1;
+  letter-spacing: 1.1px;
+  border-radius: 0.4rem;
+}
+
+.github span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
