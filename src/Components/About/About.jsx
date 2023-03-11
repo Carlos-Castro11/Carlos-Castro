@@ -4,6 +4,9 @@ import { ThemeContext } from "../../ThemeContext";
 
 // COMPONENTS
 import Card from "./Card/Card";
+import Title from "../Title";
+
+// SVG
 import html from "../../assets/icons/html.svg";
 import css from "../../assets/icons/css.svg";
 import js from "../../assets/icons/js.svg";
@@ -26,7 +29,7 @@ const About = () => {
       id="about"
       className={`${styles.about} ${dark && styles.aboutDark} container`}
     >
-      <h1 className={styles.title}>Sobre mim</h1>
+      <Title>Sobre mim</Title>
       <p className={styles.subtitle}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint fuga vel
         unde ipsum minus aliquid, repellendus culpa iusto! Tempore quo nulla

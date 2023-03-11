@@ -14,7 +14,7 @@ const Site = ({ logo, desc, link }) => {
       </div>
       <div className={styles.siteDescription}>{desc}</div>
       <a className={styles.view} rel="noreferrer" target="_blank" href={link}>
-        Visualizar
+        Visitar
       </a>
     </div>
   );

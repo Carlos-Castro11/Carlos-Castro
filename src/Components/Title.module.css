@@ -1,22 +1,14 @@
-.projects {
-  padding: 3rem 0rem;
-}
-
-.projectsDark {
-  background: var(--bg1Dark);
-}
-
 .title {
   font-family: var(--type-first);
   white-space: nowrap;
   font-size: 2rem;
   color: var(--main);
-  margin: 0 auto;
+  margin: 0rem auto 2rem auto;
   max-width: 190px;
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  letter-spacing: 1.2px;
 }
 
 .title::before {
@@ -40,27 +32,28 @@
   top: 50%;
 }
 
-.projectsDark .title {
+.title.titleDark {
   color: var(--mainDark);
 }
 
-.projectsDark .title::before {
+.title.titleDark::before {
   background: linear-gradient(45deg, transparent, var(--mainDark));
 }
 
-.projectsDark .title::after {
+.title.titleDark::after {
   background: linear-gradient(45deg, var(--mainDark), transparent);
 }
 
-.projectsContent {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+@media (min-width: 600px) {
+  .title {
+    max-width: 250px;
+    font-size: 2.5rem;
+  }
 }
 
-@media (min-width: 600px) {
-  .projectsContent {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+@media (min-width: 800px) {
+  .title {
+    max-width: 300px;
+    font-size: 3rem;
   }
 }

@@ -23,7 +23,7 @@ const Hero = () => {
     <>
       <div
         id="home"
-        className={`${dark ? styles.heroDark : styles.hero} animeLeft`}
+        className={`${styles.hero} ${dark && styles.heroDark} animeLeft`}
       >
         <div className={styles.heroContent}>
           <h1>Olá! eu sou {desktopLg ? null : <br />}Carlos Castro.</h1>

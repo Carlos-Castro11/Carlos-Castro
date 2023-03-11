@@ -7,6 +7,7 @@ import dogs from "../../assets/icons/dogs.svg";
 
 // COMPONENTS
 import Site from "./Site/Site";
+import Title from "../Title";
 
 const Projects = () => {
   const { dark } = React.useContext(ThemeContext);
@@ -16,7 +17,7 @@ const Projects = () => {
       id="projects"
       className={`${styles.projects} ${dark && styles.projectsDark}`}
     >
-      <h1 className={styles.title}>Projetos</h1>
+      <Title>Projetos</Title>
       <div className={`${styles.projectsContent} container`}>
         <Site
           desc="A melhor plataforma de streaming atualmente."

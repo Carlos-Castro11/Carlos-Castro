@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./Footer.module.css";
 import { ThemeContext } from "../../ThemeContext";
 
+// COMPONENTS
+import Title from "../Title";
+
 const Footer = () => {
   const { dark } = React.useContext(ThemeContext);
   return (
@@ -9,7 +12,7 @@ const Footer = () => {
       id="contact"
       className={`${styles.footer} ${dark && styles.footerDark}`}
     >
-      <h1 className={styles.title}>Contato</h1>
+      <Title>Contato</Title>
       <div className={styles.footerContents}>
         <a className={styles.contactItem} href="#kdns">
           <svg

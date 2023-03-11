@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,14 +11,14 @@
 body {
   --type-first: "Poppins", Arial, Helvetica, sans-serif;
   --type-second: "Roboto", Arial, Helvetica, sans-serif;
-  --type-third: "Noto Serif", Arial, Helvetica, sans-serif;
+  --type-third: "Marcellus SC", Arial, Helvetica, sans-serif;
   margin: 0px;
   padding: 0px;
   font-family: var(--type-first);
   --bg1: #e3e3e3;
   --bg2: #c0bdbddd;
-  --main: rgb(139, 0, 0);
-  --main2: rgb(255, 60, 30);
+  --main: rgb(0, 0, 0);
+  --main2: rgb(50, 50, 50);
   --text: rgb(27, 27, 27);
   --bg1Dark: rgb(27, 27, 27);
   --bg2Dark: rgb(40, 40, 40);
