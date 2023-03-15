@@ -28,8 +28,8 @@ const Hero = () => {
         <div className={styles.heroContent}>
           <h1>Olá! eu sou {desktopLg ? null : <br />}Carlos Castro.</h1>
           <p>
-            Uma pessoa apaixonada por desenvolvimento web,{" "}
-            {desktopLg ? <br /> : null}especificamente com{" "}
+            Uma pessoa apaixonada por desenvolvimento web,
+            {desktopLg ? <br /> : null}especificamente com
             <strong>JavaScript</strong>.
           </p>
           <h2>

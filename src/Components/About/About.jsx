@@ -31,21 +31,28 @@ const About = () => {
     >
       <Title>Sobre mim</Title>
       <p className={styles.subtitle}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint fuga vel
-        unde ipsum minus aliquid, repellendus culpa iusto! Tempore quo nulla
-        esse deleniti? Dignissimos praesentium officiis eos optio.
-        Reprehenderit, laudantium. Lorem{" "}
+        Meu nome é Carlos Henrique, tenho 21 anos, sou mineiro e cruzeirense,
+        sempre fui interessado pela área de computação e tecnologia, porém, fui
+        ter o meu primeiro contato com programação aos 18 anos de idade, mas foi
+        amor à primeira vista! Desde então, não paro de praticar e estudar.
+        Atualmente me considero mais um desenvolvedor <strong>FrontEnd</strong>{" "}
+        com o JavaScript, mais precisamente <strong>ReactJS</strong> que foi o
+        que mais me conquistou! Tenho meus projetos disponíveis no{" "}
         <span className={styles.linkedin}>
-          <a href="https://linkedin.com/in/carloshcsousa">Linkedin</a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Carlos-Castro11"
+          >
+            Github
+          </a>
         </span>{" "}
-        ipsum dolor sit amet consectetur adipisicing elit. Possimus fuga amet
-        tenetur vel illum suscipit labore corporis explicabo, sit consequuntur
-        facere cupiditate totam placeat omnis est odit aliquam, sed quos.
+        com todo o código.
       </p>
       <div className={styles.aboutContent}>
         <Card
           title="FrontEnd"
-          subtitle="lorem ipsum lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+          subtitle="Minha parte favorita em todo o desenvolvimento web!"
           icons={iconsCard}
           x={true}
           img={
@@ -71,7 +78,7 @@ const About = () => {
         />
         <Card
           title="BackEnd"
-          subtitle="lorem ipsum lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+          subtitle="Aperfeiçoando cada vez mais para me tornar full-stack!"
           icons={iconsCard2}
           x={false}
           img={

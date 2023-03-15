@@ -68,4 +68,8 @@
   .siteLogo {
     width: 250px;
   }
+
+  .site {
+    margin-bottom: 2rem;
+  }
 }
