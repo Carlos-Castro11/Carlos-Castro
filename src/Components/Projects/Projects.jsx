@@ -4,6 +4,7 @@ import { ThemeContext } from "../../ThemeContext";
 import muflix from "../../assets/icons/muflix.svg";
 import mf from "../../assets/icons/mf.svg";
 import dogs from "../../assets/icons/dogs.svg";
+import games from "../../assets/icons/games.svg";
 
 // COMPONENTS
 import Site from "./Site/Site";
@@ -33,6 +34,12 @@ const Projects = () => {
           desc="Garanta uma construção, com a melhor qualidade!"
           logo={mf}
           link="https://marques-finelli.vercel.app/"
+        />
+        <Site
+          desc="GAME-IN | E-commerce de games completo! Em produção..."
+          logo={games}
+          link=""
+          production={true}
         />
       </div>
     </section>

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Site.module.css";
 import { ThemeContext } from "../../../ThemeContext";
 
-const Site = ({ logo, desc, link }) => {
+const Site = ({ logo, desc, link, production }) => {
   const { dark } = React.useContext(ThemeContext);
 
   return (
@@ -13,9 +13,15 @@ const Site = ({ logo, desc, link }) => {
         </div>
       </div>
       <div className={styles.siteDescription}>{desc}</div>
-      <a className={styles.view} rel="noreferrer" target="_blank" href={link}>
-        Visitar
-      </a>
+      {production ? (
+        <span style={{ pointerEvents: "none" }} className={styles.view}>
+          Em produção...
+        </span>
+      ) : (
+        <a className={styles.view} rel="noreferrer" target="_blank" href={link}>
+          Visitar
+        </a>
+      )}
     </div>
   );
 };
