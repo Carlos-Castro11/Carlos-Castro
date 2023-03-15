@@ -14,7 +14,12 @@ const Footer = () => {
     >
       <Title>Contato</Title>
       <div className={styles.footerContents}>
-        <a className={styles.contactItem} href="https://wa.me/5538991285937">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className={styles.contactItem}
+          href="https://wa.me/5538991285937"
+        >
           <svg
             fill="#000000"
             width="30px"
@@ -30,6 +35,8 @@ const Footer = () => {
         </a>
         <a
           className={styles.contactItem}
+          target="_blank"
+          rel="noreferrer"
           href="mailto: carloshenriquemg2020@gmail.com"
         >
           <svg
