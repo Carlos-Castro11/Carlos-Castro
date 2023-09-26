@@ -30,7 +30,7 @@ const Hero = () => {
           <p>
             Uma pessoa apaixonada por desenvolvimento web,
             {desktopLg ? <br /> : null}especificamente com
-            <strong>JavaScript</strong>.
+            <strong> JavaScript</strong>.
           </p>
           <h2>
             <span className={styles.type}>
