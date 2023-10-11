@@ -31,23 +31,7 @@ const About = () => {
     >
       <Title>Sobre mim</Title>
       <p className={styles.subtitle}>
-        Meu nome é Carlos Henrique, tenho 21 anos, sou mineiro e cruzeirense,
-        sempre fui interessado pela área de computação e tecnologia, porém, fui
-        ter o meu primeiro contato com programação aos 18 anos de idade, mas foi
-        amor à primeira vista! Desde então, não paro de praticar e estudar.
-        Atualmente me considero mais um desenvolvedor <strong>FrontEnd</strong>{" "}
-        com o JavaScript, mais precisamente <strong>ReactJS</strong> que foi o
-        que mais me conquistou! Tenho meus projetos disponíveis no{" "}
-        <span className={styles.linkedin}>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/Carlos-Castro11"
-          >
-            Github
-          </a>
-        </span>{" "}
-        com todo o código.
+        Olá, sou o Carlos, tenho 21 anos e sou um aspirante a desenvolvedor. Meu objetivo principal é me tornar um profissional de excelência, e estou constantemente em busca de aprendizado. Tenho uma grande paixão pelo desenvolvimento web e, atualmente, estou adquirindo experiência por meio de um estágio na área de TI.
       </p>
       <div className={styles.aboutContent}>
         <Card
