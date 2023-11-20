@@ -23,7 +23,7 @@ const Projects = () => {
         <Site
           desc="A melhor plataforma de streaming atualmente."
           logo={muflix}
-          link="https://muflix-delta.vercel.app/"
+          link="https://muflix-2-0.vercel.app/"
         />
         <Site
           desc="Dogs - Rede social para cachorros."
