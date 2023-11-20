@@ -33,7 +33,7 @@ const Projects = () => {
         <Site
           desc="Garanta uma construção, com a melhor qualidade!"
           logo={mf}
-          link="https://marques-finelli.vercel.app/"
+          link="https://mf-wine.vercel.app/"
         />
         <Site
           desc="GAME-IN | E-commerce de games completo! Em produção..."
