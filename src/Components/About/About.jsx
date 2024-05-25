@@ -31,7 +31,7 @@ const About = () => {
     >
       <Title>Sobre mim</Title>
       <p className={styles.subtitle}>
-        Olá, meu nome é Carlos, tenho 21 anos e sou desenvolvedor há 2 anos. Meu objetivo principal é me aprimorar sempre! Estou constantemente em busca de aprendizado.
+        Olá, meu nome é Carlos, tenho 22 anos e sou desenvolvedor desde o ano de 2022. Meu objetivo principal é me aprimorar sempre! Estou constantemente em busca de aprendizado.
       </p>
       <div className={styles.aboutContent}>
         <Card
