@@ -23,7 +23,7 @@ const Projects = () => {
         <Site
           desc="A melhor plataforma de streaming atualmente."
           logo={muflix}
-          link="https://marquesefinelli.com.br/"
+          link="https://muflix-2-0.vercel.app/"
         />
         <Site
           desc="Dogs - Rede social para cachorros."
@@ -33,7 +33,7 @@ const Projects = () => {
         <Site
           desc="Garanta uma construção, com a melhor qualidade!"
           logo={mf}
-          link="https://mf-wine.vercel.app/"
+          link="https://marquesefinelli.com.br/"
         />
         <Site
           desc="GAME-IN | E-commerce de games completo!"
