@@ -15,20 +15,20 @@
   border-color: var(--mainDark);
 }
 
-.cardTitle.xT svg path {
+.cardTitle.frontEndCard svg path {
   fill: var(--main);
 }
 
-.cardDark .cardTitle.xT svg path {
+.cardDark .cardTitle.frontEndCard svg path {
   fill: var(--mainDark);
 }
 
-.cardTitle.xF svg {
+.cardTitle.backEndCard svg {
   stroke: var(--main);
   stroke-width: 1.2px;
 }
 
-.cardDark .cardTitle.xF svg {
+.cardDark .cardTitle.backEndCard svg {
   stroke: var(--mainDark);
 }
 
@@ -63,6 +63,11 @@
   border-radius: 0.4rem;
   margin-top: -10px;
   box-shadow: 0px 0px 2px black;
+}
+
+.cardDark .lang,
+.cardDark .tech {
+  background: rgb(223, 223, 223);
 }
 
 .lang img,

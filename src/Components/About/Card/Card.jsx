@@ -2,26 +2,30 @@ import React from "react";
 import styles from "./Card.module.css";
 import { ThemeContext } from "../../../ThemeContext";
 
-const Card = ({ title, subtitle, icons, img, x }) => {
+const Card = ({ title, subtitle, languageIcons, technologieIcons, img, isFrontEndCard = false }) => {
   const { dark } = React.useContext(ThemeContext);
   return (
     <div className={`${styles.card} ${dark && styles.cardDark}`}>
-      <div className={`${styles.cardTitle} ${x ? styles.xT : styles.xF}`}>
+      <div className={`${styles.cardTitle} ${isFrontEndCard ? styles.frontEndCard : styles.backEndCard}`}>
         {img}
         <h1>{title}</h1>
       </div>
       <p className={styles.cardSubtitle}>{subtitle}</p>
       <span className={styles.cardSpan}>Linguagens:</span> <br />
       <div className={styles.lang}>
-        <img src={icons[0]} alt="" />
-        <img src={icons[1]} alt="" />
-        <img src={icons[2]} alt="" />
+        {languageIcons.map((icon) => {
+          return <>
+            <img key={icon} src={icon} alt="" />
+          </>
+        })}
       </div>
       <span className={styles.cardSpan}>Tecnologias:</span> <br />
       <div className={styles.tech}>
-        <img src={icons[3]} alt="" />
-        <img src={icons[4]} alt="" />
-        {icons[5] ? <img src={icons[5]} alt="" /> : null}
+      {technologieIcons.map((icon) => {
+          return <>
+            <img key={icon} src={icon} alt="" />
+          </>
+        })}
       </div>
     </div>
   );

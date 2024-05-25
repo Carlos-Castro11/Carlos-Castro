@@ -4,7 +4,7 @@ import { ThemeContext } from "../../ThemeContext";
 import muflix from "../../assets/icons/muflix.svg";
 import mf from "../../assets/icons/mf.svg";
 import dogs from "../../assets/icons/dogs.svg";
-import games from "../../assets/icons/games.svg";
+import timer from "../../assets/icons/timer.svg";
 
 // COMPONENTS
 import Site from "./Site/Site";
@@ -36,8 +36,8 @@ const Projects = () => {
           link="https://marquesefinelli.com.br/"
         />
         <Site
-          desc="GAME-IN | E-commerce de games completo!"
-          logo={games}
+          desc="IGNITE TIMER | Timer para controle de tempo e produtividade!"
+          logo={timer}
           link=""
           production={true}
         />
