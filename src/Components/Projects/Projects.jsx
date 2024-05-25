@@ -39,6 +39,7 @@ const Projects = () => {
           desc="IGNITE TIMER | Timer para controle de tempo e produtividade!"
           logo={timer}
           link="https://ignite-timer-indol.vercel.app/"
+          production={true}
         />
       </div>
     </section>
